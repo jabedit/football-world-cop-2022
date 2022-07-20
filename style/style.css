@@ -28,7 +28,7 @@ color: #FFFFFF;
     color: #FFFFFF;
     padding: 15px 25px;
     font-weight: 500;
-    background-color: #DD0000;
+    background-color: #E56A20;
     border-radius: 5px;
     font-size: 1rem;
     
@@ -44,7 +44,7 @@ color: #FFFFFF;
     align-items: center;
     align-content: space-around;
     
-    background-color: #000;
+    background-color: #31054A;
     border-radius: 1.6rem
    
 }
@@ -81,7 +81,8 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: black;
+    background-color: #31054A;
+    border-radius: 10px;
     
     
 }
@@ -133,7 +134,7 @@ color: #FFFFFF;
     
 }
 .blog-button:hover{
-    background-color: chocolate;
+    background-color: #e56a20;
     color: white;
     border: none;
     transition: .8s;
@@ -153,7 +154,44 @@ color: #FFFFFF;
 .icon-gap{
     padding-right: 3rem;
 }
+/* world cup blog secion end */
 
+/* start goal section css */
+footer{
+    background-color: #31054A;
+}
+.goal-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    padding: 5rem 0 2.5rem 0;
+
+}
+footer hr{
+    background-color:  #B9B9B9 ;
+    
+}
+
+.footer-navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0 5rem 0;
+}
+.footer-navbar ul li{
+    padding: 1.5rem 3rem ;
+}
+.footer-navbar ul li a{
+    text-decoration: none;
+     color: #B9B9B9;
+
+}
+.footer-flexibility-body{
+    margin: 0 5%;
+}
+
+/* gloa section css start */
 @media only screen and (max-width: 576px) {
     .banner{
         flex-direction: column;
@@ -190,6 +228,23 @@ color: #FFFFFF;
         margin-right: 0% !important;
         
     }
+    .footer-navbar ul{
+        flex-direction:column ;
+        align-items: center;
+    }
+    .footer-navbar ul li{
+        padding: 0;
+    }
+    .footer-navbar ul li a{
+        text-align: center !important;
+    }
+    /* .footer-navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    /* responsive footer section- start */
+
 
 }
 
@@ -214,5 +269,11 @@ color: #FFFFFF;
         
         
         
+    }
+    .footer-navbar ul{
+        flex-direction:row ;
+       align-items: center;
+       flex-wrap: wrap;
+       align-items: flex-end;
     }
 }
