@@ -1,20 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
 /* common css */
 h1{
-
-}
-h2{
-
-}
-h3{
-
-}
-h4{
-
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 80px;
+    color: #FFFFFF;
 }
 p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 26px;
+color: #FFFFFF;
+}
+.link-button{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    font-weight: 500;
+    background-color: #DD0000;
+    border-radius: 5px;
+    font-size: 1rem;
     
+}
+    
+    
+.flexible-body{
+    margin: 2% 5% 5% 5%;
+}
+/* start banner section css */
+.banner{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    
+    background-color: #000;
+    border-radius: 1.6rem
+   
+}
+.banner-content{
+    padding: 0% 8%;
+}
+
+.half-width{
+    width: 50%;
+
+}
+.half-width p{
+    padding:1.7rem 0;
+}
+.half-width img{
+    width: 90%;
+    
+    
+}
+/* banner section css end */
+
+/* world cup blog secion start */
+.world-cup-blog{
+    display: flex;
+
+}
+.blog-item-menubar{
+    width: 24%;
+    margin-right: 3%;
+    
+}
+.blog-item-menubar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    
+    
+}
+.blog-item-menubar ul li{
+    background-color: #FFFFFF;
+    margin: 1rem 2rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+
+} 
+.blog-item-menubar ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+    color: black;
+   
+}
+.blog-item-container{
+    width: 73%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blog-item{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    border-radius: 10px ;
+}
+.blog-item img{
+    width: 100%;
+
+}
+.blog-item-child{
+    padding: 2rem 1rem ;
+}
+.blog-button{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #161616;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border:  1px solid gray;
+    
+}
+.blog-button:hover{
+    background-color: chocolate;
+    color: white;
+    border: none;
+    transition: .8s;
+}
+.blog-item p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+    margin: 2rem 0;
+    }
+.blog-item span{
+    color: gray;
+}
+.icon-gap{
+    padding-right: 3rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column;
+    }
+
+    .half-width{
+        width: 100%;
+    
+    }
+    .banner-content{
+        padding: 8% 8%;
+    }
+    .banner-content h2{
+        font-size: 3rem;
+    }
+    .half-width img{
+        width: 80%;
+        padding-left: 2rem;
+        margin: 0;
+        
+        
+    }
+    /* responsive  world cup blog secion start */
+    .blog-item-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .world-cup-blog{
+        flex-direction: column;
+    }
+    .blog-item-menubar{
+        width: 100%;
+        margin-right: 0% !important;
+        
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px){
+    .blog-item-container{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .world-cup-blog{
+        flex-direction: column;
+    }
+    .blog-item-menubar{
+        width: 100%;
+        margin-right: 0% !important;
+        
+    }
+    .blog-item-menubar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+        
+    }
 }
