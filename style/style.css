@@ -336,9 +336,10 @@ footer hr{
     }
     .blog-item-menubar ul{
         background-color: #FFFFFF;
+        text-align: center
     }
     .blog-item-menubar ul li{
-        width: 33%;
+        width: ;
         border: 1px solid #B9B9B9;
     }
     .blog-item-menubar{
